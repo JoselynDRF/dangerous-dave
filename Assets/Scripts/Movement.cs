@@ -1,12 +1,14 @@
 ﻿using UnityEngine;
 
 public class Movement : MonoBehaviour {
+  Animator animator;
+
 	public float velX = 0.08f;
   public float movX;
-  public float currentPosition;
-  public bool isLookingRight;
 
-  void Start() { }
+  void Start() {
+    animator = GetComponent <Animator>();
+  }
 
   void FixedUpdate() {
     MovePlayer();
@@ -15,18 +17,15 @@ public class Movement : MonoBehaviour {
   void MovePlayer() {
     float inputX = Input.GetAxis("Horizontal");
     movX = transform.position.x + (inputX * velX);
-    currentPosition = movX;
 
-    if (inputX > 0) {
-      transform.position = new Vector3(movX, transform.position.y, 0);
-      transform.localScale = new Vector3(1, 1, 1);
-      isLookingRight = true;
-    }
+    animator.SetFloat("velX", inputX == 0 ? 0 : 1);
 
-    if (inputX < 0) {
-      transform.position = new Vector3(movX, transform.position.y, 0);
-      transform.localScale = new Vector3(-1, 1, 1);
-      isLookingRight = false;
-    }
+    if (inputX > 0) UpdateMovementValues(1);
+    if (inputX < 0) UpdateMovementValues(-1);
+  }
+
+  void UpdateMovementValues(int scaleX) {
+    transform.position = new Vector3(movX, transform.position.y, 0);
+    transform.localScale = new Vector3(scaleX, 1, 1);
   }
 }
