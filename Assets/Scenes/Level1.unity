@@ -456,7 +456,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47c8c080ff6b9354e8f8ede02d84b180, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velX: 0.03
+  velX: 0.08
   movX: 0
   currentPosition: 0
   lookingRight: 0
