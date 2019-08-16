@@ -11,7 +11,7 @@ public class Movement : MonoBehaviour {
   // Jump
   public Transform groundCheck;
   public LayerMask groundLayer;
-  public float jumpForce = 300f;
+  public float jumpForce = 350f;
   public float groundCheckRadio = 0.08f;
   public bool grounded;
 
