@@ -1,11 +1,14 @@
 ﻿using UnityEngine;
 
 public class Movement : MonoBehaviour {
-  Animator animator;
+  private Animator animator;
+  private Rigidbody2D rigidbodyPlayer;
 
+  // Move
 	public float velX = 0.08f;
   public float movX;
 
+  // Jump
   public Transform groundCheck;
   public LayerMask groundLayer;
   public float jumpForce = 300f;
@@ -14,23 +17,12 @@ public class Movement : MonoBehaviour {
 
   void Start() {
     animator = GetComponent <Animator>();
+    rigidbodyPlayer = GetComponent <Rigidbody2D>();
   }
 
   void FixedUpdate() {
     MovePlayer();
-
-    grounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadio, groundLayer);
-
-    if (grounded) {
-      animator.SetBool("grounded", true);
-
-      if (Input.GetKeyDown(KeyCode.UpArrow)) {
-        GetComponent <Rigidbody2D>().AddForce(new Vector2(0, jumpForce));
-        animator.SetBool("grounded", false);
-      }
-    } else {
-      animator.SetBool("grounded", false);
-    }
+    JumpPlayer();
   }
 
   void MovePlayer() {
@@ -46,5 +38,15 @@ public class Movement : MonoBehaviour {
   void UpdateMovementValues(int scaleX) {
     transform.position = new Vector3(movX, transform.position.y, 0);
     transform.localScale = new Vector3(scaleX, 1, 1);
+  }
+
+  void JumpPlayer() {
+    grounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadio, groundLayer);
+
+    if (grounded && Input.GetKeyDown(KeyCode.UpArrow)) {
+      rigidbodyPlayer.AddForce(new Vector2(0, jumpForce));
+    }
+
+    animator.SetBool("grounded", grounded);
   }
 }
