@@ -6,12 +6,31 @@ public class Movement : MonoBehaviour {
 	public float velX = 0.08f;
   public float movX;
 
+  public Transform groundCheck;
+  public LayerMask groundLayer;
+  public float jumpForce = 300f;
+  public float groundCheckRadio = 0.08f;
+  public bool grounded;
+
   void Start() {
     animator = GetComponent <Animator>();
   }
 
   void FixedUpdate() {
     MovePlayer();
+
+    grounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadio, groundLayer);
+
+    if (grounded) {
+      animator.SetBool("grounded", true);
+
+      if (Input.GetKeyDown(KeyCode.UpArrow)) {
+        GetComponent <Rigidbody2D>().AddForce(new Vector2(0, jumpForce));
+        animator.SetBool("grounded", false);
+      }
+    } else {
+      animator.SetBool("grounded", false);
+    }
   }
 
   void MovePlayer() {
