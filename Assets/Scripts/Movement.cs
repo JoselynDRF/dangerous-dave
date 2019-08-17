@@ -16,12 +16,14 @@ public class Movement : MonoBehaviour {
   public bool grounded;
 
   // Win level
-  public GameObject GoToDoorText;
+  public GameObject goToDoorText;
+  public bool hasKey;
 
   void Start() {
     animator = GetComponent <Animator>();
     rigidbodyPlayer = GetComponent <Rigidbody2D>();
-    GoToDoorText.SetActive(false);
+    goToDoorText.SetActive(false);
+    hasKey = false;
   }
 
   void FixedUpdate() {
@@ -55,8 +57,21 @@ public class Movement : MonoBehaviour {
   }
 
   void OnTriggerEnter2D(Collider2D other) {
-		if (other.gameObject.tag == "Trophy") {
-			GoToDoorText.SetActive(true);
-		}
+    string tag = other.gameObject.tag;
+    GetTrophy(tag);
+    GoToNextLevel(tag);
+  }
+
+  void GetTrophy(string tag) {
+    if (tag == "Trophy") {
+      goToDoorText.SetActive(true);
+      hasKey = true;
+    }
+  }
+
+  void GoToNextLevel(string tag) {
+    if (tag == "Door" && hasKey) {
+      Debug.Log("NEXT LEVEL");
+    }
   }
 }

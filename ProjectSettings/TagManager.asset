@@ -6,6 +6,7 @@ TagManager:
   tags:
   - RedGem
   - Trophy
+  - Door
   layers:
   - Default
   - TransparentFX
