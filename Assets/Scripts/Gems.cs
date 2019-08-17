@@ -3,10 +3,23 @@
 public class Gems : MonoBehaviour {
 	private int blueScore = 100;
 	private int redScore = 150;
+	private int trophyScore = 1000;
 
 	void OnTriggerEnter2D(Collider2D other) {
 		if (other.gameObject.tag == "Player") {
-			Score.scoreValue += gameObject.tag == "RedGem" ? redScore : blueScore;
+
+			switch (gameObject.tag)	{
+				case "RedGem":
+					Score.scoreValue += redScore;
+					break;
+				case "Trophy":
+					Score.scoreValue += trophyScore;
+					break;
+				default:
+					Score.scoreValue += blueScore;
+					break;
+			}
+
 			Destroy(gameObject);
 		}
 	}

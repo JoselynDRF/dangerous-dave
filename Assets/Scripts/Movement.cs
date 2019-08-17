@@ -15,9 +15,13 @@ public class Movement : MonoBehaviour {
   public float groundCheckRadio = 0.08f;
   public bool grounded;
 
+  // Win level
+  public GameObject GoToDoorText;
+
   void Start() {
     animator = GetComponent <Animator>();
     rigidbodyPlayer = GetComponent <Rigidbody2D>();
+    GoToDoorText.SetActive(false);
   }
 
   void FixedUpdate() {
@@ -48,5 +52,11 @@ public class Movement : MonoBehaviour {
     }
 
     animator.SetBool("grounded", grounded);
+  }
+
+  void OnTriggerEnter2D(Collider2D other) {
+		if (other.gameObject.tag == "Trophy") {
+			GoToDoorText.SetActive(true);
+		}
   }
 }
