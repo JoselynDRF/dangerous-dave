@@ -5,6 +5,18 @@ TextureImporter:
   - first:
       213: -2019233282015166877
     second: trophy
+  - first:
+      213: -5806429548128397179
+    second: trophy_0
+  - first:
+      213: 8400986841065316012
+    second: trophy_1
+  - first:
+      213: 5046083274960260285
+    second: trophy_2
+  - first:
+      213: -597564468551632221
+    second: trophy_3
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -89,7 +101,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: trophy
+      name: trophy_0
       rect:
         serializedVersion: 2
         x: 245
@@ -97,14 +109,77 @@ TextureImporter:
         width: 52
         height: 54
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f5bd4f3f1a03f2d4b920fac26d5e945c
-      internalID: -2019233282015166877
+      spriteID: 7d924bd95beba3349840f3abab358c6d
+      internalID: -5806429548128397179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trophy_1
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 6
+        width: 39
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b9bce2f17cc24a42acf08e2c249e379
+      internalID: 8400986841065316012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trophy_2
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 5
+        width: 36
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a932f46e8de9c4e40a8bf43d666330a8
+      internalID: 5046083274960260285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trophy_3
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 4
+        width: 36
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dcbddfc54342e8438c774c2b252b857
+      internalID: -597564468551632221
       vertices: []
       indices: 
       edges: []
