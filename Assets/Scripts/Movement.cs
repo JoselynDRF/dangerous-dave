@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Movement : MonoBehaviour {
   private Animator animator;
@@ -71,7 +72,7 @@ public class Movement : MonoBehaviour {
 
   void GoToNextLevel(string tag) {
     if (tag == "Door" && hasKey) {
-      Debug.Log("NEXT LEVEL");
+      SceneManager.LoadScene("LevelCompleted");
     }
   }
 }

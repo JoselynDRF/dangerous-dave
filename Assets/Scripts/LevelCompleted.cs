@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class LevelCompleted : MonoBehaviour {
 	private Animator animator;
@@ -20,7 +21,7 @@ public class LevelCompleted : MonoBehaviour {
 
 	void GoToNextLevel(string tag) {
     if (tag == "Door") {
-      Debug.Log("NEXT LEVEL");
+      SceneManager.LoadScene("Level2");
     }
   }
 }
