@@ -1,11 +1,24 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+using System.Text.RegularExpressions;
+using System;
 
 public class LevelCompleted : MonoBehaviour {
 	private Animator animator;
+  public Text levelText;
+  public Text congratMessage;
+  private string sceneName;
+  private int currentLevel;
+  private int levels = 10;
 
   void Start() {
     animator = GetComponent <Animator>();
+    sceneName = PlayerPrefs.GetString("lastLoadedScene");
+    currentLevel = Int32.Parse(Regex.Match(sceneName, @"\d+").Value);
+
+    levelText.text = "LEVEL 0" + currentLevel;
+    congratMessage.text = "GOOD WORK! ONLY " + (levels - currentLevel) + " MORE TO GO!";
   }
 
 	void FixedUpdate() {
@@ -21,7 +34,7 @@ public class LevelCompleted : MonoBehaviour {
 
 	void GoToNextLevel(string tag) {
     if (tag == "Door") {
-      SceneManager.LoadScene("Level2");
+      SceneManager.LoadScene("Level" + (currentLevel + 1));
     }
   }
 }

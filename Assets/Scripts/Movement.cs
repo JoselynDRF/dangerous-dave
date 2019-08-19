@@ -72,6 +72,7 @@ public class Movement : MonoBehaviour {
 
   void GoToNextLevel(string tag) {
     if (tag == "Door" && hasKey) {
+      PlayerPrefs.SetString ("lastLoadedScene", SceneManager.GetActiveScene().name);
       SceneManager.LoadScene("LevelCompleted");
     }
   }

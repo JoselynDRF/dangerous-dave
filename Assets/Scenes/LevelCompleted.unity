@@ -428,6 +428,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3c3f54e89159f142960b2c77742a9ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelText: {fileID: 1258811644}
+  congratMessage: {fileID: 1375581616}
 --- !u!61 &300232458
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -822,7 +824,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 0
-  m_Text: ' LEVEL 01'
+  m_Text: LEVEL 01
 --- !u!222 &1258811645
 CanvasRenderer:
   m_ObjectHideFlags: 0

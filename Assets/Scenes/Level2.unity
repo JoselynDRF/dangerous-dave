@@ -6569,7 +6569,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 0
-  m_Text: ' LEVEL 02'
+  m_Text: LEVEL 02
 --- !u!222 &1443673859
 CanvasRenderer:
   m_ObjectHideFlags: 0
