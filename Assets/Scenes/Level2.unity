@@ -750,7 +750,7 @@ PrefabInstance:
     - target: {fileID: 4217677230973461913, guid: b4dcbe2876c9b174cb74c10ef22ab926,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.7699999
+      value: 0.77
       objectReference: {fileID: 0}
     - target: {fileID: 4217677230973461913, guid: b4dcbe2876c9b174cb74c10ef22ab926,
         type: 3}
@@ -2776,14 +2776,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 585122508}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.73, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -34.512383, y: 26.924555, z: 0}
+  m_LocalScale: {x: 34.966953, y: 34.966953, z: 34.966953}
   m_Children:
   - {fileID: 1160328901}
   - {fileID: 768553787}
   - {fileID: 1780297848}
-  m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_Father: {fileID: 1519766980}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &618927916
 PrefabInstance:
@@ -3959,7 +3959,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2019233282015166877, guid: 16e644ae39e2b95469346cdc7e756b44,
+  m_Sprite: {fileID: -5806429548128397179, guid: 16e644ae39e2b95469346cdc7e756b44,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -3968,7 +3968,7 @@ SpriteRenderer:
   m_Size: {x: 0.8666667, y: 0.9}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &858200343
@@ -7049,6 +7049,7 @@ GameObject:
   - component: {fileID: 1519766979}
   - component: {fileID: 1519766978}
   - component: {fileID: 1519766977}
+  - component: {fileID: 1519766981}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -7131,14 +7132,30 @@ RectTransform:
   - {fileID: 1443673857}
   - {fileID: 1472526816}
   - {fileID: 858200344}
+  - {fileID: 585122509}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0.987, y: -0.04}
   m_SizeDelta: {x: 806.805, y: 450.153}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1519766981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1519766976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93a853fc52dce0d47b5530e9ecc88b40, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 107928249}
+  minCameraPosition: {x: 0.9399999, y: 0}
+  maxCameraPosition: {x: 29.48, y: 0}
 --- !u!1001 &1533653164
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8173,7 +8190,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2019233282015166877, guid: 16e644ae39e2b95469346cdc7e756b44,
+  m_Sprite: {fileID: -5806429548128397179, guid: 16e644ae39e2b95469346cdc7e756b44,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -8182,7 +8199,7 @@ SpriteRenderer:
   m_Size: {x: 0.8666667, y: 0.9}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1001 &1795576670
@@ -9238,6 +9255,7 @@ GameObject:
   - component: {fileID: 2010127856}
   - component: {fileID: 2010127855}
   - component: {fileID: 2010127854}
+  - component: {fileID: 2010127857}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -9310,6 +9328,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2010127857
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2010127853}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93a853fc52dce0d47b5530e9ecc88b40, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 107928249}
+  minCameraPosition: {x: 0.9399999, y: 0}
+  maxCameraPosition: {x: 29.48, y: 0}
 --- !u!4 &2032519638 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 526430364953459046, guid: 277fb68ed92ef5641beaf98f5112452c,
