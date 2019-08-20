@@ -2195,7 +2195,7 @@ GameObject:
   - component: {fileID: 410202883}
   m_Layer: 10
   m_Name: Water
-  m_TagString: Untagged
+  m_TagString: Enemies
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5871,7 +5871,7 @@ GameObject:
   - component: {fileID: 1251845384}
   m_Layer: 8
   m_Name: Fires
-  m_TagString: Untagged
+  m_TagString: Enemies
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

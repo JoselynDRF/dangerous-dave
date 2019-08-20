@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 526430364953459047}
   m_Layer: 10
   m_Name: FiresGroupx6
-  m_TagString: Untagged
+  m_TagString: Enemies
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -50,7 +50,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -2.996246, y: -5.2415686}
+  m_Offset: {x: -2.996246, y: -5.2376976}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -61,7 +61,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 6.0032163, y: 0.9175625}
+  m_Size: {x: 6.0032163, y: 0.9253049}
   m_EdgeRadius: 0
 --- !u!1001 &2298892844597348389
 PrefabInstance:

@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
+using System.Collections;
 
 public class Movement : MonoBehaviour {
   private Animator animator;
@@ -20,11 +21,18 @@ public class Movement : MonoBehaviour {
   public GameObject goToDoorText;
   public bool hasKey;
 
+  // Died
+  private float initialPositionX;
+  private float initialPositionY;
+
   void Start() {
     animator = GetComponent <Animator>();
     rigidbodyPlayer = GetComponent <Rigidbody2D>();
     goToDoorText.SetActive(false);
     hasKey = false;
+
+    initialPositionX = transform.position.x;
+    initialPositionY = transform.position.y;
   }
 
   void FixedUpdate() {
@@ -63,6 +71,11 @@ public class Movement : MonoBehaviour {
     GoToNextLevel(tag);
   }
 
+  void OnCollisionEnter2D(Collision2D other) {
+    string tag = other.gameObject.tag;
+    GetDied(tag);
+  }
+
   void GetTrophy(string tag) {
     if (tag == "Trophy") {
       goToDoorText.SetActive(true);
@@ -75,5 +88,20 @@ public class Movement : MonoBehaviour {
       PlayerPrefs.SetString ("lastLoadedScene", SceneManager.GetActiveScene().name);
       SceneManager.LoadScene("LevelCompleted");
     }
+  }
+
+  void GetDied(string tag) {
+    if (tag == "Enemies") {
+      animator.SetBool("died", true);
+      this.enabled = false;
+      StartCoroutine(RestartPlayer());
+    }
+  }
+
+  public IEnumerator RestartPlayer() {
+    yield return new WaitForSeconds(1.5f);
+    animator.SetBool("died", false);
+    transform.position = new Vector3(initialPositionX, initialPositionY, 0);
+    this.enabled = true;
   }
 }
