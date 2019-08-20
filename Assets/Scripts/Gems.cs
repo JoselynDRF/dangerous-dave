@@ -11,16 +11,16 @@ public class Gems : MonoBehaviour {
 
 			switch (gameObject.tag)	{
 				case "PurpleGem":
-					Score.scoreValue += purpleScore;
+					GameManager.score += purpleScore;
 					break;
 				case "RedGem":
-					Score.scoreValue += redScore;
+					GameManager.score += redScore;
 					break;
 				case "Trophy":
-					Score.scoreValue += trophyScore;
+					GameManager.score += trophyScore;
 					break;
 				default:
-					Score.scoreValue += blueScore;
+					GameManager.score += blueScore;
 					break;
 			}
 

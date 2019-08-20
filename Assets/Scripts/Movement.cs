@@ -98,8 +98,9 @@ public class Movement : MonoBehaviour {
         this.enabled = false;
         StartCoroutine(RestartPlayer());
       } else {
-        GameManager.lives = 3;
         SceneManager.LoadScene("GameOver");
+        GameManager.lives = 3;
+        GameManager.score = 0;
       }
     }
   }
