@@ -92,9 +92,14 @@ public class Movement : MonoBehaviour {
 
   void GetDied(string tag) {
     if (tag == "Enemies") {
-      animator.SetBool("died", true);
-      this.enabled = false;
-      StartCoroutine(RestartPlayer());
+      if (GameManager.lives > 0) {
+        GameManager.lives -= 1;
+        animator.SetBool("died", true);
+        this.enabled = false;
+        StartCoroutine(RestartPlayer());
+      } else {
+        Debug.Log("GAME OVER");
+      }
     }
   }
 
