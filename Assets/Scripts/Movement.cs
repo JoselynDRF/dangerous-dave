@@ -98,7 +98,8 @@ public class Movement : MonoBehaviour {
         this.enabled = false;
         StartCoroutine(RestartPlayer());
       } else {
-        Debug.Log("GAME OVER");
+        GameManager.lives = 3;
+        SceneManager.LoadScene("GameOver");
       }
     }
   }
