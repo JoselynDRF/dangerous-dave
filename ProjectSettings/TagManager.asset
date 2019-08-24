@@ -9,6 +9,7 @@ TagManager:
   - Door
   - PurpleGem
   - Enemies
+  - JetPack
   layers:
   - Default
   - TransparentFX

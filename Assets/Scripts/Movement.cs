@@ -25,6 +25,10 @@ public class Movement : MonoBehaviour {
   private float initialPositionX;
   private float initialPositionY;
 
+  // JetPack
+  private bool hasJetPack;
+  private bool isJetPackOn;
+
   void Start() {
     animator = GetComponent <Animator>();
     rigidbodyPlayer = GetComponent <Rigidbody2D>();
@@ -38,6 +42,7 @@ public class Movement : MonoBehaviour {
   void FixedUpdate() {
     MovePlayer();
     JumpPlayer();
+    UseJetPack();
   }
 
   void MovePlayer() {
@@ -68,6 +73,7 @@ public class Movement : MonoBehaviour {
   void OnTriggerEnter2D(Collider2D other) {
     string tag = other.gameObject.tag;
     GetTrophy(tag);
+    GetJetPack(other);
     GoToNextLevel(tag);
   }
 
@@ -83,9 +89,23 @@ public class Movement : MonoBehaviour {
     }
   }
 
+  void GetJetPack(Collider2D jetPack) {
+    if (jetPack.gameObject.tag == "JetPack") {
+      hasJetPack = true;
+      Destroy(jetPack.gameObject);
+    }
+  }
+
+  void UseJetPack() {
+    if (Input.GetKeyDown(KeyCode.Space) && hasJetPack) {
+      isJetPackOn = !isJetPackOn;
+      animator.SetBool("jetpack", isJetPackOn);
+    }
+  }
+
   void GoToNextLevel(string tag) {
     if (tag == "Door" && hasKey) {
-      PlayerPrefs.SetString ("lastLoadedScene", SceneManager.GetActiveScene().name);
+      PlayerPrefs.SetString("lastLoadedScene", SceneManager.GetActiveScene().name);
       SceneManager.LoadScene("LevelCompleted");
     }
   }
