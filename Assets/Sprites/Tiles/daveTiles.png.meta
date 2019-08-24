@@ -1,0 +1,925 @@
+fileFormatVersion: 2
+guid: 225cf5ae3377d364698b00f04938c6fe
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4846244640585039263
+    second: daveTiles_0
+  - first:
+      213: -2147652823833648782
+    second: daveTiles_1
+  - first:
+      213: -7404800447448769615
+    second: daveTiles_2
+  - first:
+      213: 8077111222734628285
+    second: daveTiles_3
+  - first:
+      213: 2930452746188500483
+    second: daveTiles_4
+  - first:
+      213: -6988059490734838031
+    second: daveTiles_5
+  - first:
+      213: -8346354989435632177
+    second: daveTiles_6
+  - first:
+      213: 4162005895231632662
+    second: daveTiles_7
+  - first:
+      213: -8723369493299869720
+    second: daveTiles_8
+  - first:
+      213: 8647633177494471931
+    second: daveTiles_9
+  - first:
+      213: -1250075383619147990
+    second: daveTiles_10
+  - first:
+      213: -718452421659492969
+    second: daveTiles_11
+  - first:
+      213: -7585071312572481419
+    second: daveTiles_12
+  - first:
+      213: 2089804189011635895
+    second: jetPack
+  - first:
+      213: -8454319120916426179
+    second: daveTiles_14
+  - first:
+      213: 9046088708383066382
+    second: daveTiles_15
+  - first:
+      213: 6899601088383001235
+    second: daveTiles_16
+  - first:
+      213: -1680635265698888549
+    second: daveTiles_17
+  - first:
+      213: 1249304716979769980
+    second: daveTiles_18
+  - first:
+      213: -7596231944421564634
+    second: daveTiles_19
+  - first:
+      213: 1672307985101138055
+    second: daveTiles_20
+  - first:
+      213: 6171335980476041197
+    second: daveTiles_21
+  - first:
+      213: 956070251740214100
+    second: daveTiles_22
+  - first:
+      213: 373005852025422263
+    second: daveTiles_23
+  - first:
+      213: 577581599288093214
+    second: daveTiles_24
+  - first:
+      213: 5785339180313675185
+    second: daveTiles_25
+  - first:
+      213: -6251744093393070139
+    second: daveTiles_26
+  - first:
+      213: 8915066460441573125
+    second: daveTiles_27
+  - first:
+      213: -6633123894494445546
+    second: daveTiles_28
+  - first:
+      213: -9013701640104517195
+    second: daveTiles_29
+  - first:
+      213: 3816849945845318578
+    second: daveTiles_30
+  - first:
+      213: -7304192945865260011
+    second: daveTiles_31
+  - first:
+      213: 1063430523724054372
+    second: daveTiles_32
+  - first:
+      213: -6193039549986718331
+    second: daveTiles_33
+  - first:
+      213: -1438985643930415720
+    second: daveTiles_34
+  - first:
+      213: -6907931009279707997
+    second: daveTiles_35
+  - first:
+      213: 6584724419885453755
+    second: daveTiles_36
+  - first:
+      213: 2335642156620153888
+    second: daveTiles_37
+  - first:
+      213: -2452203860516234755
+    second: daveTiles_38
+  - first:
+      213: 1927548709818077962
+    second: daveTiles_39
+  - first:
+      213: -4844523829845856173
+    second: daveTiles_40
+  - first:
+      213: -197504945793544632
+    second: daveTiles_41
+  - first:
+      213: 63098350269441945
+    second: daveTiles_42
+  - first:
+      213: 5818243275895090651
+    second: daveTiles_43
+  - first:
+      213: 3177343842019080728
+    second: daveTiles_44
+  - first:
+      213: 4626959219782113637
+    second: daveTiles_45
+  - first:
+      213: -7532547802493876345
+    second: daveTiles_46
+  - first:
+      213: -7162507711032385525
+    second: daveTiles_47
+  - first:
+      213: -6751584295987298794
+    second: daveTiles_48
+  - first:
+      213: -3773342927388840879
+    second: daveTiles_49
+  - first:
+      213: -7884718353225266911
+    second: daveTiles_50
+  - first:
+      213: -2333618303429950177
+    second: daveTiles_51
+  - first:
+      213: 7051132724032072278
+    second: daveTiles_52
+  - first:
+      213: -7608696568637326719
+    second: daveTiles_53
+  - first:
+      213: 2171021336207029478
+    second: pipe
+  - first:
+      213: 6573093064293227023
+    second: daveTiles_55
+  - first:
+      213: 4952139358933542212
+    second: daveTiles_56
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 58
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: daveTiles_2
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 62
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 230c557efc88537429bf4a104f02cd1b
+      internalID: -7404800447448769615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: daveTiles_3
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 62
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07e7fa22e54523c4090bcd59e3cf0595
+      internalID: 8077111222734628285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: daveTiles_4
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 62
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ccab436a095735468fdca25268395df
+      internalID: 2930452746188500483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: daveTiles_5
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 62
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28efca4292fa45b45b914a860a14fe11
+      internalID: -6988059490734838031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: daveTiles_7
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 62
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d162729987e96f449c9d612ce223fa1
+      internalID: 4162005895231632662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: daveTiles_8
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 62
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b67d0aa6aa7ae447bf1bc1edbefcb08
+      internalID: -8723369493299869720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: daveTiles_9
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 62
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 067e72e4eafb8b743a70fe244fb5dff8
+      internalID: 8647633177494471931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: daveTiles_10
+      rect:
+        serializedVersion: 2
+        x: 602
+        y: 62
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 254bf386b4bb8f941b79bdac1553908a
+      internalID: -1250075383619147990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: daveTiles_11
+      rect:
+        serializedVersion: 2
+        x: 662
+        y: 62
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5ee4eaf5ec95ad489b3bf45443a8fd9
+      internalID: -718452421659492969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: daveTiles_12
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 62
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 048e88003c207d7439369d793c5a9fe0
+      internalID: -7585071312572481419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jetPack
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 62
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1eb47114a0c98874db0f4df398c77a94
+      internalID: 2089804189011635895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: daveTiles_14
+      rect:
+        serializedVersion: 2
+        x: 842
+        y: 62
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86751b58da5799d4b9cf882517503f35
+      internalID: -8454319120916426179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: daveTiles_15
+      rect:
+        serializedVersion: 2
+        x: 902
+        y: 62
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a5d7477aeda0bf47a60098cee619031
+      internalID: 9046088708383066382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: daveTiles_17
+      rect:
+        serializedVersion: 2
+        x: 1022
+        y: 62
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc59ab914915add4db0b056a16369eec
+      internalID: -1680635265698888549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: daveTiles_22
+      rect:
+        serializedVersion: 2
+        x: 1322
+        y: 62
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b433b680d2c0d144ab94d89b32653f34
+      internalID: 956070251740214100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: daveTiles_31
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 2
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48c28ee406c8bda4588839f384759e4f
+      internalID: -7304192945865260011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: daveTiles_32
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 2
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb59f1e08bf4465498e916efe54d74ef
+      internalID: 1063430523724054372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: daveTiles_33
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 2
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8071ce001eb58734f930e22ff67b7b78
+      internalID: -6193039549986718331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: daveTiles_34
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 2
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9780f7946a0d7244f801d388d6b77710
+      internalID: -1438985643930415720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: daveTiles_35
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 2
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2c56afcbd9335d4ca1b4cdc7e0c12c7
+      internalID: -6907931009279707997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: daveTiles_36
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 2
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a09242c365ef064fb5a2cc130718bf2
+      internalID: 6584724419885453755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: daveTiles_37
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 2
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c68f3d3e88284e24ba44cb83a71a7d67
+      internalID: 2335642156620153888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: daveTiles_38
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 2
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46102e6daba6f3349991b518301a925b
+      internalID: -2452203860516234755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: daveTiles_39
+      rect:
+        serializedVersion: 2
+        x: 602
+        y: 2
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a8c66c241900f94e8e63206b73f038e
+      internalID: 1927548709818077962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: daveTiles_40
+      rect:
+        serializedVersion: 2
+        x: 662
+        y: 2
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34ae46d0b591d544dab449ffc829e71f
+      internalID: -4844523829845856173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: daveTiles_42
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 2
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7875c152787e19f4d97cb0488d0009c7
+      internalID: 63098350269441945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: daveTiles_43
+      rect:
+        serializedVersion: 2
+        x: 842
+        y: 2
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc2c0605f408b824fab294cfeefdf01d
+      internalID: 5818243275895090651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: daveTiles_44
+      rect:
+        serializedVersion: 2
+        x: 902
+        y: 2
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2efd5f62dd6a5044bd5fd31ba7dbb32
+      internalID: 3177343842019080728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: daveTiles_46
+      rect:
+        serializedVersion: 2
+        x: 1022
+        y: 2
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dccdc61415d98c4b9629e61da2b22f8
+      internalID: -7532547802493876345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: daveTiles_53
+      rect:
+        serializedVersion: 2
+        x: 1442
+        y: 2
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79451ddf8f8856b46af7fc12fe5d0c8e
+      internalID: -7608696568637326719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pipe
+      rect:
+        serializedVersion: 2
+        x: 1502
+        y: 2
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d05d2fe6d0141c143bedf3fb975f6716
+      internalID: 2171021336207029478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
