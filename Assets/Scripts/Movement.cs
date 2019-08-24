@@ -101,6 +101,7 @@ public class Movement : MonoBehaviour {
       isJetPackOn = !isJetPackOn;
       animator.SetBool("jetpack", isJetPackOn);
       rigidbodyPlayer.gravityScale = isJetPackOn ? 0 : 1;
+      rigidbodyPlayer.velocity = Vector3.zero;
     }
 
     if ((Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.DownArrow)) && isJetPackOn) {
