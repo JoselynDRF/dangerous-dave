@@ -7,7 +7,7 @@ public class Movement : MonoBehaviour {
   private Rigidbody2D rigidbodyPlayer;
 
   // Move
-	public float velX = 0.08f;
+	public float velocity = 0.08f;
   public float movX;
 
   // Jump
@@ -47,7 +47,7 @@ public class Movement : MonoBehaviour {
 
   void MovePlayer() {
     float inputX = Input.GetAxis("Horizontal");
-    movX = transform.position.x + (inputX * velX);
+    movX = transform.position.x + (inputX * velocity);
 
     animator.SetFloat("velX", inputX == 0 ? 0 : 1);
 
@@ -63,7 +63,7 @@ public class Movement : MonoBehaviour {
   void JumpPlayer() {
     grounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadio, groundLayer);
 
-    if (grounded && Input.GetKeyDown(KeyCode.UpArrow)) {
+    if (grounded && Input.GetKeyDown(KeyCode.UpArrow) && !isJetPackOn) {
       rigidbodyPlayer.AddForce(new Vector2(0, jumpForce));
     }
 
@@ -100,6 +100,13 @@ public class Movement : MonoBehaviour {
     if (Input.GetKeyDown(KeyCode.Space) && hasJetPack) {
       isJetPackOn = !isJetPackOn;
       animator.SetBool("jetpack", isJetPackOn);
+      rigidbodyPlayer.gravityScale = isJetPackOn ? 0 : 1;
+    }
+
+    if (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.DownArrow) && isJetPackOn) {
+      float inputY = Input.GetAxis("Vertical");
+      float movY = transform.position.y + (inputY * velocity);
+      transform.position = new Vector3(transform.position.x, movY, 0);
     }
   }
 
