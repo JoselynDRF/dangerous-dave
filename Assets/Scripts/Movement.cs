@@ -103,7 +103,7 @@ public class Movement : MonoBehaviour {
       rigidbodyPlayer.gravityScale = isJetPackOn ? 0 : 1;
     }
 
-    if (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.DownArrow) && isJetPackOn) {
+    if ((Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.DownArrow)) && isJetPackOn) {
       float inputY = Input.GetAxis("Vertical");
       float movY = transform.position.y + (inputY * velocity);
       transform.position = new Vector3(transform.position.x, movY, 0);
