@@ -869,6 +869,7 @@ MonoBehaviour:
   goToDoorText: {fileID: 858200343}
   hasKey: 0
   progressBar: {fileID: 1797179609}
+  fullBar: {fileID: 329216337}
 --- !u!61 &107928252
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3324,7 +3325,6 @@ GameObject:
   - component: {fileID: 695034846}
   - component: {fileID: 695034848}
   - component: {fileID: 695034847}
-  - component: {fileID: 695034849}
   m_Layer: 5
   m_Name: BarContainer
   m_TagString: Untagged
@@ -3389,19 +3389,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 695034845}
   m_CullTransparentMesh: 0
---- !u!114 &695034849
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 695034845}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 786587f706473df4aa8d3ef60e4b9d27, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fullBar: {fileID: 329216337}
 --- !u!1001 &702315732
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10469,12 +10456,12 @@ PrefabInstance:
     - target: {fileID: 8943791712075963033, guid: 59a2d1a1cd3258c45a08b5237e9624a2,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.44
+      value: 27.5
       objectReference: {fileID: 0}
     - target: {fileID: 8943791712075963033, guid: 59a2d1a1cd3258c45a08b5237e9624a2,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.48
+      value: -0.5
       objectReference: {fileID: 0}
     - target: {fileID: 8943791712075963033, guid: 59a2d1a1cd3258c45a08b5237e9624a2,
         type: 3}

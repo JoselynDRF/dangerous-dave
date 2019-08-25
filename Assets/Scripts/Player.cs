@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.Collections;
+using UnityEngine.UI;
 
 public class Player : MonoBehaviour {
   private Animator animator;
@@ -27,6 +28,8 @@ public class Player : MonoBehaviour {
 
   // JetPack
   public GameObject progressBar;
+  public Image fullBar;
+  private float fillBarAmount = 1;
   private float barSpeed = 15f;
   private bool hasJetPack;
   private bool isJetPackOn;
@@ -101,6 +104,8 @@ public class Player : MonoBehaviour {
   }
 
   void UseJetPack() {
+    fullBar.fillAmount = fillBarAmount;
+
     if (Input.GetKeyDown(KeyCode.Space) && hasJetPack) {
       HandleJetPack();
       rigidbodyPlayer.velocity = Vector3.zero;
@@ -119,9 +124,9 @@ public class Player : MonoBehaviour {
   }
 
   void FillJetPackBar() {
-    GameManager.fillBarAmount -= Time.deltaTime / barSpeed;
+    fillBarAmount -= Time.deltaTime / barSpeed;
 
-    if (GameManager.fillBarAmount <= 0) {
+    if (fillBarAmount <= 0) {
       hasJetPack = false;
       progressBar.SetActive(false);
       HandleJetPack();

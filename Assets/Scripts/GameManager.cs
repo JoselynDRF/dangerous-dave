@@ -4,7 +4,6 @@ public class GameManager : MonoBehaviour {
   public static GameManager instance = null;
   public static int lives = 3;
   public static int score = 0;
-  public static float fillBarAmount = 1;
 
   void Awake() {
     if (instance == null) {
