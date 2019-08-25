@@ -43,12 +43,12 @@ public class Movement : MonoBehaviour {
   }
 
   void FixedUpdate() {
-    MovePlayer();
+    MovePlayerX();
     JumpPlayer();
     UseJetPack();
   }
 
-  void MovePlayer() {
+  void MovePlayerX() {
     float inputX = Input.GetAxis("Horizontal");
     movX = transform.position.x + (inputX * velocity);
 
@@ -102,29 +102,36 @@ public class Movement : MonoBehaviour {
 
   void UseJetPack() {
     if (Input.GetKeyDown(KeyCode.Space) && hasJetPack) {
-      isJetPackOn = !isJetPackOn;
-      animator.SetBool("jetpack", isJetPackOn);
-      rigidbodyPlayer.gravityScale = isJetPackOn ? 0 : 1;
+      HandleJetPack();
       rigidbodyPlayer.velocity = Vector3.zero;
     }
 
-    if ((Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.DownArrow)) && isJetPackOn) {
-      float inputY = Input.GetAxis("Vertical");
-      float movY = transform.position.y + (inputY * velocity);
-      transform.position = new Vector3(transform.position.x, movY, 0);
-    }
-
     if (isJetPackOn) {
-      GameManager.fillBarAmount -= Time.deltaTime / barSpeed;
-
-      if (GameManager.fillBarAmount <= 0) {
-        isJetPackOn = false;
-        hasJetPack = false;
-        animator.SetBool("jetpack", false);
-        progressBar.SetActive(false);
-        rigidbodyPlayer.gravityScale = 1;
-      }
+      MovePlayerY();
+      FillJetPackBar();
     }
+  }
+
+  void MovePlayerY() {
+    float inputY = Input.GetAxis("Vertical");
+    float movY = transform.position.y + (inputY * velocity);
+    transform.position = new Vector3(transform.position.x, movY, 0);
+  }
+
+  void FillJetPackBar() {
+    GameManager.fillBarAmount -= Time.deltaTime / barSpeed;
+
+    if (GameManager.fillBarAmount <= 0) {
+      hasJetPack = false;
+      progressBar.SetActive(false);
+      HandleJetPack();
+    }
+  }
+
+  void HandleJetPack() {
+    isJetPackOn = !isJetPackOn;
+    animator.SetBool("jetpack", isJetPackOn);
+    rigidbodyPlayer.gravityScale = isJetPackOn ? 0 : 1;
   }
 
   void GoToNextLevel(string tag) {
@@ -154,9 +161,6 @@ public class Movement : MonoBehaviour {
     animator.SetBool("died", false);
     transform.position = new Vector3(initialPositionX, initialPositionY, 0);
     this.enabled = true;
-
-    isJetPackOn = false;
-    animator.SetBool("jetpack", false);
-    rigidbodyPlayer.gravityScale = 1;
+    if (isJetPackOn) HandleJetPack();
   }
 }
