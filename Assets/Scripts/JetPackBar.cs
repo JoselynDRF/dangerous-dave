@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 
-public class ProgressBar : MonoBehaviour {
+public class JetPackBar : MonoBehaviour {
 	public Image fullBar;
 
 	void Update() {
