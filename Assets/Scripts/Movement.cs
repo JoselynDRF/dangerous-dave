@@ -26,13 +26,16 @@ public class Movement : MonoBehaviour {
   private float initialPositionY;
 
   // JetPack
+  public GameObject progressBar;
+  private float barSpeed = 15f;
   private bool hasJetPack;
   private bool isJetPackOn;
 
   void Start() {
-    animator = GetComponent <Animator>();
-    rigidbodyPlayer = GetComponent <Rigidbody2D>();
+    animator = GetComponent<Animator>();
+    rigidbodyPlayer = GetComponent<Rigidbody2D>();
     goToDoorText.SetActive(false);
+    progressBar.SetActive(false);
     hasKey = false;
 
     initialPositionX = transform.position.x;
@@ -93,6 +96,7 @@ public class Movement : MonoBehaviour {
     if (jetPack.gameObject.tag == "JetPack") {
       hasJetPack = true;
       Destroy(jetPack.gameObject);
+      progressBar.SetActive(true);
     }
   }
 
@@ -108,6 +112,18 @@ public class Movement : MonoBehaviour {
       float inputY = Input.GetAxis("Vertical");
       float movY = transform.position.y + (inputY * velocity);
       transform.position = new Vector3(transform.position.x, movY, 0);
+    }
+
+    if (isJetPackOn) {
+      GameManager.fillBarAmount -= Time.deltaTime / barSpeed;
+
+      if (GameManager.fillBarAmount <= 0) {
+        isJetPackOn = false;
+        hasJetPack = false;
+        animator.SetBool("jetpack", false);
+        progressBar.SetActive(false);
+        rigidbodyPlayer.gravityScale = 1;
+      }
     }
   }
 
@@ -138,5 +154,9 @@ public class Movement : MonoBehaviour {
     animator.SetBool("died", false);
     transform.position = new Vector3(initialPositionX, initialPositionY, 0);
     this.enabled = true;
+
+    isJetPackOn = false;
+    animator.SetBool("jetpack", false);
+    rigidbodyPlayer.gravityScale = 1;
   }
 }
