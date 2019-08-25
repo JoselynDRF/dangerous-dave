@@ -2,7 +2,7 @@
 using UnityEngine.SceneManagement;
 using System.Collections;
 
-public class Movement : MonoBehaviour {
+public class Player : MonoBehaviour {
   private Animator animator;
   private Rigidbody2D rigidbodyPlayer;
 
