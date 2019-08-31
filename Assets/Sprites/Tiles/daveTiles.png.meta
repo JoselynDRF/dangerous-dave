@@ -49,7 +49,7 @@ TextureImporter:
     second: daveTiles_14
   - first:
       213: 9046088708383066382
-    second: daveTiles_15
+    second: water
   - first:
       213: 6899601088383001235
     second: daveTiles_16
@@ -509,7 +509,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: daveTiles_15
+      name: water
       rect:
         serializedVersion: 2
         x: 902
