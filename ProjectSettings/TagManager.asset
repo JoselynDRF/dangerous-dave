@@ -10,6 +10,9 @@ TagManager:
   - PurpleGem
   - Enemies
   - JetPack
+  - GreenGem
+  - Crown
+  - Ring
   layers:
   - Default
   - TransparentFX

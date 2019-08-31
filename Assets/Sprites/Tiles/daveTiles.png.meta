@@ -55,7 +55,7 @@ TextureImporter:
     second: daveTiles_16
   - first:
       213: -1680635265698888549
-    second: daveTiles_17
+    second: ring
   - first:
       213: 1249304716979769980
     second: daveTiles_18
@@ -70,7 +70,7 @@ TextureImporter:
     second: daveTiles_21
   - first:
       213: 956070251740214100
-    second: daveTiles_22
+    second: greenGem
   - first:
       213: 373005852025422263
     second: daveTiles_23
@@ -163,7 +163,7 @@ TextureImporter:
     second: daveTiles_52
   - first:
       213: -7608696568637326719
-    second: daveTiles_53
+    second: crown
   - first:
       213: 2171021336207029478
     second: pipe
@@ -530,7 +530,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: daveTiles_17
+      name: ring
       rect:
         serializedVersion: 2
         x: 1022
@@ -551,7 +551,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: daveTiles_22
+      name: greenGem
       rect:
         serializedVersion: 2
         x: 1322
@@ -866,7 +866,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: daveTiles_53
+      name: crown
       rect:
         serializedVersion: 2
         x: 1442
