@@ -43,6 +43,7 @@ public class Player : MonoBehaviour {
 	public GameObject rightBullet;
 	public GameObject leftBullet;
   private bool facingRight;
+  private bool readyToFire; 
 
   void Start() {
     animator = GetComponent<Animator>();
@@ -114,6 +115,7 @@ public class Player : MonoBehaviour {
     if (gun.gameObject.tag == "Gun") {
       gunText.SetActive(true);
       hasGun = true;
+      readyToFire = true;
       Destroy(gun.gameObject);
     }
   }
@@ -185,8 +187,9 @@ public class Player : MonoBehaviour {
   }
 
   void Fire() {
-    if (Input.GetKeyDown(KeyCode.X) && hasGun) {
+    if (Input.GetKeyDown(KeyCode.X) && hasGun && readyToFire) {
 			Instantiate(facingRight ? rightBullet : leftBullet, firePosition.position, Quaternion.identity);
+      StartCoroutine(waitToFireAgain());
 		}
   }
 
@@ -196,5 +199,11 @@ public class Player : MonoBehaviour {
     transform.position = new Vector3(initialPositionX, initialPositionY, 0);
     this.enabled = true;
     if (isJetPackOn) HandleJetPack();
+  }
+
+  public IEnumerator waitToFireAgain() {
+    readyToFire = false;
+    yield return new WaitForSeconds(0.5f);
+    readyToFire = true;
   }
 }
