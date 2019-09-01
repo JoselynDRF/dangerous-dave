@@ -34,12 +34,18 @@ public class Player : MonoBehaviour {
   private bool hasJetPack;
   private bool isJetPackOn;
 
+  // Gun
+  public GameObject gunText;
+  public bool hasGun;
+
   void Start() {
     animator = GetComponent<Animator>();
     rigidbodyPlayer = GetComponent<Rigidbody2D>();
     goToDoorText.SetActive(false);
     progressBar.SetActive(false);
+    gunText.SetActive(false);
     hasKey = false;
+    hasGun = false;
 
     initialPositionX = transform.position.x;
     initialPositionY = transform.position.y;
@@ -81,6 +87,7 @@ public class Player : MonoBehaviour {
     GetTrophy(tag);
     GetJetPack(other);
     GoToNextLevel(tag);
+    GetGun(other);
   }
 
   void OnCollisionEnter2D(Collision2D other) {
@@ -92,6 +99,14 @@ public class Player : MonoBehaviour {
     if (tag == "Trophy") {
       goToDoorText.SetActive(true);
       hasKey = true;
+    }
+  }
+
+  void GetGun(Collider2D gun) {
+    if (gun.gameObject.tag == "Gun") {
+      gunText.SetActive(true);
+      hasGun = true;
+      Destroy(gun.gameObject);
     }
   }
 

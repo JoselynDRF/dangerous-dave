@@ -133,7 +133,7 @@ TextureImporter:
     second: daveTiles_42
   - first:
       213: 5818243275895090651
-    second: daveTiles_43
+    second: gun
   - first:
       213: 3177343842019080728
     second: daveTiles_44
@@ -803,7 +803,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: daveTiles_43
+      name: gun
       rect:
         serializedVersion: 2
         x: 842
