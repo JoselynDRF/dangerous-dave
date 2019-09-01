@@ -213,6 +213,6 @@ public class Player : MonoBehaviour {
 		monsterAnimator.SetBool("died", true);
     GameManager.isEnemyFrozen = true;
     yield return new WaitForSeconds(1.5f);
-  	Destroy(monster.gameObject);
+  	monster.gameObject.SetActive(false);
   }
 }
