@@ -38,6 +38,12 @@ public class Player : MonoBehaviour {
   public GameObject gunText;
   public bool hasGun;
 
+  // Bullet
+	public Transform firePosition;
+	public GameObject rightBullet;
+	public GameObject leftBullet;
+  private bool facingRight;
+
   void Start() {
     animator = GetComponent<Animator>();
     rigidbodyPlayer = GetComponent<Rigidbody2D>();
@@ -55,6 +61,7 @@ public class Player : MonoBehaviour {
     MovePlayerX();
     JumpPlayer();
     UseJetPack();
+    Fire();
   }
 
   void MovePlayerX() {
@@ -70,6 +77,7 @@ public class Player : MonoBehaviour {
   void UpdateMovementValues(int scaleX) {
     transform.position = new Vector3(movX, transform.position.y, 0);
     transform.localScale = new Vector3(scaleX, 1, 1);
+    facingRight = scaleX == 1;
   }
 
   void JumpPlayer() {
@@ -174,6 +182,12 @@ public class Player : MonoBehaviour {
         GameManager.score = 0;
       }
     }
+  }
+
+  void Fire() {
+    if (Input.GetKeyDown(KeyCode.X) && hasGun) {
+			Instantiate(facingRight ? rightBullet : leftBullet, firePosition.position, Quaternion.identity);
+		}
   }
 
   public IEnumerator RestartPlayer() {
