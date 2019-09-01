@@ -5,8 +5,12 @@ public class SpiderAI : MonoBehaviour {
 	private int currentIndex = 0;
 	private float speed = 4f;
 
+	void Start() {
+		GameManager.isEnemyFrozen = false;
+	}
+
 	void FixedUpdate() {
-		MoveSpider();
+		if (!GameManager.isEnemyFrozen) MoveSpider();
 	}
 	
 	void MoveSpider() {

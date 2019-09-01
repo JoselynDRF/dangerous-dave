@@ -211,6 +211,7 @@ public class Player : MonoBehaviour {
   public IEnumerator DestroyMonster(Collision2D monster) {
 		Animator monsterAnimator = monster.gameObject.GetComponent<Animator>();
 		monsterAnimator.SetBool("died", true);
+    GameManager.isEnemyFrozen = true;
     yield return new WaitForSeconds(1.5f);
   	Destroy(monster.gameObject);
   }
