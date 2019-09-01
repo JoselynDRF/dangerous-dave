@@ -18,7 +18,7 @@ public class Bullet : MonoBehaviour {
 			Destroy(gameObject);
 		}
 
-		if (other.gameObject.tag == "Monsters") {
+		if (other.gameObject.tag == "Monsters" && !GameManager.isEnemyFrozen) {
 			StartCoroutine(DestroyMonster(other));
 		}
 	}

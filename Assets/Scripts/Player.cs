@@ -102,7 +102,7 @@ public class Player : MonoBehaviour {
   void OnCollisionEnter2D(Collision2D other) {
     string tag = other.gameObject.tag;
     GetDied(tag);
-    if (tag == "Monsters") StartCoroutine(DestroyMonster(other));
+    if (tag == "Monsters" && !GameManager.isEnemyFrozen) StartCoroutine(DestroyMonster(other));
   }
 
   void GetTrophy(string tag) {
@@ -213,6 +213,6 @@ public class Player : MonoBehaviour {
 		monsterAnimator.SetBool("died", true);
     GameManager.isEnemyFrozen = true;
     yield return new WaitForSeconds(1.5f);
-  	monster.gameObject.SetActive(false);
+  	Destroy(monster.gameObject);
   }
 }
