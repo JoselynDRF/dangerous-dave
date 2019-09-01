@@ -2,7 +2,6 @@
 using UnityEngine;
 
 public class Bullet : MonoBehaviour {
-	private Animator monsterAnimator;
 	Rigidbody2D rigidbodyBullet;
 	public float speed;
 
@@ -20,13 +19,13 @@ public class Bullet : MonoBehaviour {
 		}
 
 		if (other.gameObject.tag == "Monsters") {
-			monsterAnimator = other.gameObject.GetComponent<Animator>();
-			monsterAnimator.SetBool("died", true);
 			StartCoroutine(DestroyMonster(other));
 		}
 	}
 
 	public IEnumerator DestroyMonster(Collider2D monster) {
+		Animator monsterAnimator = monster.gameObject.GetComponent<Animator>();
+		monsterAnimator.SetBool("died", true);
     yield return new WaitForSeconds(1.5f);
   	Destroy(monster.gameObject);
   }

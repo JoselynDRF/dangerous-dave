@@ -102,6 +102,7 @@ public class Player : MonoBehaviour {
   void OnCollisionEnter2D(Collision2D other) {
     string tag = other.gameObject.tag;
     GetDied(tag);
+    if (tag == "Monsters") StartCoroutine(DestroyMonster(other));
   }
 
   void GetTrophy(string tag) {
@@ -205,5 +206,12 @@ public class Player : MonoBehaviour {
     readyToFire = false;
     yield return new WaitForSeconds(0.5f);
     readyToFire = true;
+  }
+
+  public IEnumerator DestroyMonster(Collision2D monster) {
+		Animator monsterAnimator = monster.gameObject.GetComponent<Animator>();
+		monsterAnimator.SetBool("died", true);
+    yield return new WaitForSeconds(1.5f);
+  	Destroy(monster.gameObject);
   }
 }
