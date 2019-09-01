@@ -15,6 +15,7 @@ TagManager:
   - Ring
   - Gun
   - Wall
+  - Monsters
   layers:
   - Default
   - TransparentFX
