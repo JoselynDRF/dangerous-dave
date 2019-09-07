@@ -174,7 +174,7 @@ public class Player : MonoBehaviour {
   }
 
   void GetDied(string tag) {
-    if (tag == "Enemies" || tag == "Monsters") {
+    if (tag == "Enemies" || tag == "Monsters" || tag == "Shot") {
       if (GameManager.lives > 0) {
         GameManager.lives -= 1;
         animator.SetBool("died", true);

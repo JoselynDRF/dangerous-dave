@@ -17,6 +17,7 @@ TagManager:
   - Wall
   - Monsters
   - FirePoint
+  - Shot
   layers:
   - Default
   - TransparentFX
