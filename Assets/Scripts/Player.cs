@@ -179,10 +179,10 @@ public class Player : MonoBehaviour {
   void GetDied(string tag) {
     if (tag == "Enemies" || tag == "Monsters" || tag == "Shot") {
       animator.SetBool("died", true);
+      this.enabled = false;
 
       if (GameManager.lives > 0) {
         GameManager.lives -= 1;
-        this.enabled = false;
         StartCoroutine(RestartPlayer());
       } else {
         StartCoroutine(GameOver());
