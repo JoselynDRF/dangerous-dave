@@ -18,6 +18,7 @@ TagManager:
   - Monsters
   - FirePoint
   - Shot
+  - StartShooting
   layers:
   - Default
   - TransparentFX

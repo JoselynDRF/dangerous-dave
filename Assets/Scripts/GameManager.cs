@@ -5,6 +5,7 @@ public class GameManager : MonoBehaviour {
   public static int lives = 3;
   public static int score = 0;
   public static bool isEnemyFrozen = false;
+  public static bool shotEnabled = false;
 
   void Awake() {
     if (instance == null) {

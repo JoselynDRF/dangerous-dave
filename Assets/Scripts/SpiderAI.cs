@@ -5,6 +5,7 @@ public class SpiderAI : MonoBehaviour {
 	public GameObject shot;
 	private int currentIndex = 0;
 	private float speed = 4f;
+	public bool allowToShoot;
 
 	void Start() {
 		GameManager.isEnemyFrozen = false;
@@ -12,6 +13,7 @@ public class SpiderAI : MonoBehaviour {
 
 	void FixedUpdate() {
 		if (!GameManager.isEnemyFrozen) MoveSpider();
+		if (GameManager.shotEnabled) allowToShoot = true;
 	}
 	
 	void MoveSpider() {
@@ -26,7 +28,7 @@ public class SpiderAI : MonoBehaviour {
 	}
 
 	void OnTriggerEnter2D(Collider2D other) {
-		if (other.gameObject.tag == "FirePoint") {
+		if (other.gameObject.tag == "FirePoint" && allowToShoot) {
 			Instantiate(shot, gameObject.transform.position, Quaternion.identity);
 		}
 	}

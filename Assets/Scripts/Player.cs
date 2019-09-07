@@ -56,6 +56,8 @@ public class Player : MonoBehaviour {
 
     initialPositionX = transform.position.x;
     initialPositionY = transform.position.y;
+
+    GameManager.shotEnabled = false;
   }
 
   void FixedUpdate() {
@@ -98,6 +100,7 @@ public class Player : MonoBehaviour {
     GoToNextLevel(tag);
     GetGun(other);
     GetDied(tag);
+    StartShooting(tag);
   }
 
   void OnCollisionEnter2D(Collision2D other) {
@@ -185,6 +188,12 @@ public class Player : MonoBehaviour {
         StartCoroutine(GameOver());
       }
     }
+  }
+
+  void StartShooting(string tag) {
+    if (tag == "StartShooting") {
+			GameManager.shotEnabled = true;
+		}
   }
 
   void Fire() {

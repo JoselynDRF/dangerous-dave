@@ -8643,7 +8643,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &663546176
 Transform:
   m_ObjectHideFlags: 0
@@ -19922,9 +19922,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1589547405}
+  - component: {fileID: 1589547406}
   m_Layer: 0
   m_Name: Point (2)
-  m_TagString: Untagged
+  m_TagString: StartShooting
   m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19943,6 +19944,32 @@ Transform:
   m_Father: {fileID: 648060434}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1589547406
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1589547404}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.021976471, y: 0.4933896}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.7512665, y: 2.940835}
+  m_EdgeRadius: 0
 --- !u!1001 &1590808055
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28512,6 +28539,16 @@ PrefabInstance:
       propertyPath: spiderPoints.Array.data[3]
       value: 
       objectReference: {fileID: 1855666996}
+    - target: {fileID: 7025883364379490494, guid: 6cec5443c380d4241b717bcf135388b7,
+        type: 3}
+      propertyPath: canShoot
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7025883364379490494, guid: 6cec5443c380d4241b717bcf135388b7,
+        type: 3}
+      propertyPath: allowToShoot
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6cec5443c380d4241b717bcf135388b7, type: 3}
 --- !u!1001 &7288299114853771262
