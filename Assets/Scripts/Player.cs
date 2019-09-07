@@ -175,15 +175,14 @@ public class Player : MonoBehaviour {
 
   void GetDied(string tag) {
     if (tag == "Enemies" || tag == "Monsters" || tag == "Shot") {
+      animator.SetBool("died", true);
+
       if (GameManager.lives > 0) {
         GameManager.lives -= 1;
-        animator.SetBool("died", true);
         this.enabled = false;
         StartCoroutine(RestartPlayer());
       } else {
-        SceneManager.LoadScene("GameOver");
-        GameManager.lives = 3;
-        GameManager.score = 0;
+        StartCoroutine(GameOver());
       }
     }
   }
@@ -201,6 +200,13 @@ public class Player : MonoBehaviour {
     transform.position = new Vector3(initialPositionX, initialPositionY, 0);
     this.enabled = true;
     if (isJetPackOn) HandleJetPack();
+  }
+
+  public IEnumerator GameOver() {
+    yield return new WaitForSeconds(1.5f);
+    SceneManager.LoadScene("GameOver");
+    GameManager.lives = 3;
+    GameManager.score = 0;
   }
 
   public IEnumerator waitToFireAgain() {
