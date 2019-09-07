@@ -97,6 +97,7 @@ public class Player : MonoBehaviour {
     GetJetPack(other);
     GoToNextLevel(tag);
     GetGun(other);
+    GetDied(tag);
   }
 
   void OnCollisionEnter2D(Collision2D other) {

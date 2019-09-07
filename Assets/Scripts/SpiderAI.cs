@@ -2,6 +2,7 @@
 
 public class SpiderAI : MonoBehaviour {
 	public Transform[] spiderPoints;
+	public GameObject shot;
 	private int currentIndex = 0;
 	private float speed = 4f;
 
@@ -22,5 +23,11 @@ public class SpiderAI : MonoBehaviour {
 
 		if (transform.position == spiderPoints[currentIndex].transform.position) currentIndex++;
 		if (currentIndex == spiderPoints.Length) currentIndex = 0;
+	}
+
+	void OnTriggerEnter2D(Collider2D other) {
+		if (other.gameObject.tag == "FirePoint") {
+			Instantiate(shot, gameObject.transform.position, Quaternion.identity);
+		}
 	}
 }
