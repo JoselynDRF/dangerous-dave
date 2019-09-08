@@ -40,7 +40,7 @@ TextureImporter:
     second: daveTiles_11
   - first:
       213: -7585071312572481419
-    second: daveTiles_12
+    second: pipeVertical
   - first:
       213: 2089804189011635895
     second: jetPack
@@ -446,7 +446,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: daveTiles_12
+      name: pipeVertical
       rect:
         serializedVersion: 2
         x: 722
