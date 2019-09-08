@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1728881168279801121}
   - component: {fileID: 1728881168279801120}
   - component: {fileID: 1728881168279801126}
+  - component: {fileID: 2093696381435658518}
   m_Layer: 0
   m_Name: Crown
   m_TagString: Crown
@@ -25,7 +26,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1728881168279801123}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 55.449, y: 1.0247455, z: 446.30472}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -108,3 +109,15 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.9227867, y: 0.68084884}
   m_EdgeRadius: 0
+--- !u!114 &2093696381435658518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1728881168279801123}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 089c22c1445afaf4caa8033ef58888a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
