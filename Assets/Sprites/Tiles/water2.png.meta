@@ -1,22 +1,28 @@
 fileFormatVersion: 2
-guid: ecdc1aa4cc9b6d445abe0ba9f683df28
+guid: 1030bf15b474c3d42a2f222f6a61fe3f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5043677950246885132
-    second: weirdweed_0
+      213: 4531421633079013050
+    second: water2_0
   - first:
-      213: -1199302967588533262
-    second: weirdweed_1
+      213: -5669334107135387475
+    second: water2_1
   - first:
-      213: -6505810419909361670
-    second: weirdweed_2
+      213: 123397184318700287
+    second: water2_2
   - first:
-      213: -2910393002526683378
-    second: weirdweed_3
+      213: -2764198908863901089
+    second: water2_3
   - first:
-      213: 5167673396448545229
-    second: weirdweed_4
+      213: 9113128787412302805
+    second: water2_4
+  - first:
+      213: -2671799046185314628
+    second: water2_5
+  - first:
+      213: 8333590276061005921
+    second: water2_6
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -60,7 +66,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 55
+  spritePixelsToUnits: 58
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -101,13 +107,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: weirdweed_0
+      name: water2_0
       rect:
         serializedVersion: 2
         x: 2
         y: 2
-        width: 55
-        height: 52
+        width: 58
+        height: 58
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,20 +121,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3154f0728c31ec94d93851346b564cc1
-      internalID: 5043677950246885132
+      spriteID: c926dcc7d379e524f841855324082f1e
+      internalID: 4531421633079013050
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: weirdweed_1
+      name: water2_1
       rect:
         serializedVersion: 2
-        x: 65
+        x: 62
         y: 2
-        width: 50
-        height: 52
+        width: 58
+        height: 58
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -136,20 +142,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b724db25121593344ac28a040e326654
-      internalID: -1199302967588533262
+      spriteID: bd695ed3e1f799e4c858ab850a083af1
+      internalID: -5669334107135387475
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: weirdweed_2
+      name: water2_2
       rect:
         serializedVersion: 2
-        x: 129
+        x: 122
         y: 2
-        width: 51
-        height: 54
+        width: 58
+        height: 58
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -157,20 +163,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 88cdcb487b67e77489c5254e2ccd71c7
-      internalID: -6505810419909361670
+      spriteID: d0a42a7fb68667f43b1878c54f611796
+      internalID: 123397184318700287
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: weirdweed_3
+      name: water2_3
       rect:
         serializedVersion: 2
-        x: 186
+        x: 182
         y: 2
-        width: 54
-        height: 52
+        width: 58
+        height: 58
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,20 +184,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 88fef509d3183294986419d1b0ed40f4
-      internalID: -2910393002526683378
+      spriteID: 46ed238212c4e974faaffefcaa50615a
+      internalID: -2764198908863901089
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: weirdweed_4
+      name: water2_4
       rect:
         serializedVersion: 2
-        x: 245
+        x: 242
         y: 2
-        width: 55
-        height: 54
+        width: 58
+        height: 58
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -199,8 +205,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f498dfdab47914e4c97f0e61660c86f4
-      internalID: 5167673396448545229
+      spriteID: e2cdf9b9ce3884443a6436cff8d22e57
+      internalID: 9113128787412302805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water2_5
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 2
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4caf029d8a8e5d04eb25b888dfe2a887
+      internalID: -2671799046185314628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water2_6
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 2
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af729a68b874cbe46a32cfc2922f1abf
+      internalID: 8333590276061005921
       vertices: []
       indices: 
       edges: []
