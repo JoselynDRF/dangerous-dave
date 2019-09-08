@@ -97,7 +97,7 @@ TextureImporter:
     second: daveTiles_30
   - first:
       213: -7304192945865260011
-    second: daveTiles_31
+    second: pinkEnemy
   - first:
       213: 1063430523724054372
     second: daveTiles_32
@@ -572,7 +572,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: daveTiles_31
+      name: pinkEnemy
       rect:
         serializedVersion: 2
         x: 122
