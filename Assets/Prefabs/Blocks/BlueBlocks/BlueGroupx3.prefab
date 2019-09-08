@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2443336811838213937}
   - component: {fileID: 2443336811838213936}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BlueGroupx3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -70,7 +70,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2443336812917745341}
   - component: {fileID: 2443336812917745330}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: blueBlock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -150,7 +150,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2443336813110867634}
   - component: {fileID: 2443336813110867635}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: blueBlock (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -230,7 +230,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2443336813598405150}
   - component: {fileID: 2443336813598405151}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: blueBlock (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
